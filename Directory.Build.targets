@@ -1,18 +1,20 @@
 <Project>
-  <PropertyGroup>
-    <DeployDir>D:\Users\ZhangWeinian\UserResources</DeployDir>
-  </PropertyGroup>
+	<PropertyGroup>
+		<DeployDir>D:\Users\ZhangWeinian\UserResources</DeployDir>
+		<MyNewProperty>$(UserResources)</MyNewProperty>
+		<DeployDir Condition="'$(UserResources)' != ''">$(MyNewProperty)</DeployDir>
+	</PropertyGroup>
 
-  <Target Name="CopyOutputsToDeploy" AfterTargets="Build" Condition="('$(MSBuildProjectName)'=='ImgResources' or '$(MSBuildProjectName)'=='TextResources') and '$(Configuration)'=='Release'">
-    <Message Importance="High" Text="Copy $(TargetFileName) => '$(DeployDir)'" />
-    <MakeDir Directories="$(DeployDir)" Condition="!Exists('$(DeployDir)')" />
+	<Target Name="CopyOutputsToDeploy" AfterTargets="Build" Condition="('$(MSBuildProjectName)'=='ImgResources' or '$(MSBuildProjectName)'=='TextResources') and '$(Configuration)'=='Release'">
+		<Message Importance="High" Text="Copy $(TargetFileName) => '$(DeployDir)'" />
+		<MakeDir Directories="$(DeployDir)" Condition="!Exists('$(DeployDir)')" />
 
-    <ItemGroup>
-      <FilesToCopy Include="$(TargetPath)" />
-      <FilesToCopy Include="$(TargetDir)$(TargetName).pdb" Condition="Exists('$(TargetDir)$(TargetName).pdb')" />
-      <FilesToCopy Include="$(TargetDir)$(TargetName).xml" Condition="Exists('$(TargetDir)$(TargetName).xml')" />
-    </ItemGroup>
+	<ItemGroup>
+		<FilesToCopy Include="$(TargetPath)" />
+		<FilesToCopy Include="$(TargetDir)$(TargetName).pdb" Condition="Exists('$(TargetDir)$(TargetName).pdb')" />
+		<FilesToCopy Include="$(TargetDir)$(TargetName).xml" Condition="Exists('$(TargetDir)$(TargetName).xml')" />
+	</ItemGroup>
 
-    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(DeployDir)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" />
-  </Target>
+	<Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(DeployDir)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" />
+	</Target>
 </Project>
