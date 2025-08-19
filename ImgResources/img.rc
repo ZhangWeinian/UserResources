@@ -1,0 +1,97 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "CustomIcon\\app.ico"
+
+IDI_ICON2               ICON                    "CustomIcon\\cache.ico"
+
+IDI_ICON3               ICON                    "CustomIcon\\code.ico"
+
+IDI_ICON4               ICON                    "CustomIcon\\data.ico"
+
+IDI_ICON5               ICON                    "CustomIcon\\developer.ico"
+
+IDI_ICON6               ICON                    "CustomIcon\\extend.ico"
+
+IDI_ICON7               ICON                    "CustomIcon\\game.ico"
+
+IDI_ICON8               ICON                    "CustomIcon\\gitignore.ico"
+
+IDI_ICON9               ICON                    "CustomIcon\\project.ico"
+
+IDI_ICON10              ICON                    "CustomIcon\\user.ico"
+
+IDI_ICON11              ICON                    "CustomIcon\\vim.ico"
+
+IDI_ICON12              ICON                    "CustomIcon\\vs.ico"
+
+IDI_ICON13              ICON                    "CustomIcon\\wls.ico"
+
+IDI_ICON14              ICON                    "CustomIcon\\ubuntu.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
