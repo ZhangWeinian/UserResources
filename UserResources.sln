@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{FCE85972-C601-3E31-0F23-6F886044FA5A}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.targets = Directory.Build.targets
+		list.json = list.json
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		F_5_4Microsoft VS 2022 Projects_4UserResources_4list_1json__JsonSchema = {
 	EndProjectSection
 EndProject
 Global

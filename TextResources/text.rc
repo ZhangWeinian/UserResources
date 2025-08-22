@@ -80,6 +80,21 @@ BEGIN
     IDS_STRING122           "我的工程"
     IDS_STRING123           "我的坚果云"
     IDS_STRING124           "针对系统工具"
+    IDS_STRING125           "用户项目"
+    IDS_STRING126           "用户工程"
+    IDS_STRING127           "应用程序（x86）"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING128           "应用程序（x64）"
+    IDS_STRING129           "应用程序（Local Files）"
+    IDS_STRING130           "应用程序（System）"
+    IDS_STRING131           "应用程序（User）"
+    IDS_STRING132           "系统资源"
+    IDS_STRING133           "配置文件（Users）"
+    IDS_STRING134           "配置文件（System）"
+    IDS_STRING135           "配置文件（Admin）"
 END
 
 #endif    // 涓枃(绠�浣擄紝涓浗) resources
